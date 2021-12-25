@@ -9,6 +9,7 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        return this.name.length() >= 3 && this.name.length() <= 19 && this.name.matches("\\S+\\s\\S+");
+        return this.name != null && this.name.length() >= 3
+                && this.name.length() <= 19 && this.name.matches("\\S+\\s\\S+");
     }
 }

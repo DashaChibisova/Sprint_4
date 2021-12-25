@@ -1,11 +1,12 @@
 package ru.qa.praktikum;
 
 
+import static ru.qa.praktikum.BaseData.nameEighteenChar;
+
 public class Praktikum {
 
     public static void main(String[] args) {
-        BaseData baseData = new BaseData();
-        Account account = new Account(baseData.getNameToEmboss());
+        Account account = new Account(nameEighteenChar);
         account.checkNameToEmboss();
     }
 }
